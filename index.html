@@ -28,6 +28,9 @@ img{max-width:100%}
 .cards{grid-template-columns:repeat(4,minmax(0,1fr))}
 @container (max-width: 1180px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @container (max-width: 600px){.cards{grid-template-columns:minmax(0,1fr)}}
+.g3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.g2{grid-template-columns:repeat(2,minmax(0,1fr))}
+@container (max-width: 600px){.g3,.g2{grid-template-columns:minmax(0,1fr)}}
 </style>
 </head>
 <body>
@@ -127,12 +130,14 @@ img{max-width:100%}
 <div style="max-width: 1200px; margin: 0 auto; padding: 112px 32px">
 <p style="margin: 0 0 12px; font-size: 13px; letter-spacing: 0.3em; color: #E8A39C; font-weight: 700">WORKS</p>
 <h2 style="margin: 0 0 56px; font-family: 'Shippori Mincho B1', serif; font-weight: 800; font-size: 38px">作品</h2>
-<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px">
-<img src="images/work01.jpg" alt="ランタン形タイルを貼り、杉の持ち手をつけた作品" width="1100" height="1100" loading="lazy" style="width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover; display: block">
-<img src="images/work02.jpg" alt="ランタン形タイルの作品を正面から。杉の枠の中に芯が見える" width="1100" height="1100" loading="lazy" style="width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover; display: block">
-<img src="images/work03.jpg" alt="杉の持ち手を立てたランタン形タイルの作品" width="1100" height="1100" loading="lazy" style="width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover; display: block">
-<img src="images/work04.jpg" alt="赤・紺・黄の角タイルを貼った蓋つきの丸い小物入れ" width="1100" height="1100" loading="lazy" style="width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover; display: block">
-<img src="images/work05.jpg" alt="蓋を開けた丸い小物入れ。蓋には放射状の模様" width="1100" height="1100" loading="lazy" style="width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover; display: block">
+<div class="g3" style="display: grid; gap: 16px">
+<img src="images/work01.jpg" alt="ランタン形タイルを貼り、杉の持ち手をつけた作品" width="870" height="1883" loading="lazy" style="width: 100%; height: auto; display: block">
+<img src="images/work02.jpg" alt="ランタン形タイルの作品を正面から。杉の枠の中に芯が見える" width="870" height="1883" loading="lazy" style="width: 100%; height: auto; display: block">
+<img src="images/work03.jpg" alt="杉の持ち手を立てたランタン形タイルの作品" width="870" height="1883" loading="lazy" style="width: 100%; height: auto; display: block">
+</div>
+<div class="g2" style="display: grid; gap: 16px; margin-top: 16px">
+<img src="images/work04.jpg" alt="赤・紺・黄の角タイルを貼った蓋つきの丸い小物入れ" width="1080" height="1080" loading="lazy" style="width: 100%; height: auto; display: block">
+<img src="images/work05.jpg" alt="蓋を開けた丸い小物入れ。蓋には放射状の模様" width="1080" height="1080" loading="lazy" style="width: 100%; height: auto; display: block">
 </div>
 <p style="margin: 48px 0 0; font-size: 15px; color: #CFC8BE">すべて一点ものです。色の組み合わせやサイズのご相談、オーダーメイドも承ります。</p>
 </div>

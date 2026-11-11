@@ -31,6 +31,7 @@ img{max-width:100%}
 .g3{grid-template-columns:repeat(3,minmax(0,1fr))}
 .g2{grid-template-columns:repeat(2,minmax(0,1fr))}
 @container (max-width: 600px){.g3,.g2{grid-template-columns:minmax(0,1fr)}}
+@container (max-width: 600px){.hero{padding-top:0 !important;gap:40px !important}.hero-img{order:-1}.hero-img img{max-width:none !important;box-shadow:none !important;margin:0 -32px;width:calc(100% + 64px) !important}}
 </style>
 </head>
 <body>
@@ -52,7 +53,7 @@ img{max-width:100%}
 </header>
 
 <main>
-<section id="top" style="max-width: 1200px; margin: 0 auto; padding: 72px 32px 88px; display: flex; flex-wrap: wrap; align-items: center; gap: 56px">
+<section id="top" class="hero" style="max-width: 1200px; margin: 0 auto; padding: 72px 32px 88px; display: flex; flex-wrap: wrap; align-items: center; gap: 56px">
 <div style="flex: 1 1 420px; min-width: 0">
 <p style="margin: 0 0 20px; font-size: 13px; letter-spacing: 0.3em; color: #B8322A; font-weight: 700">TILE × UZUKURI CEDAR</p>
 <h1 style="margin: 0; font-family: 'Shippori Mincho B1', serif; font-weight: 800; font-size: min(44px, 7.8cqi); line-height: 1.45; letter-spacing: 0.06em; white-space: nowrap">割れた瞬間に、<br>世界にひとつの<br>デザインが生まれる。</h1>
@@ -62,7 +63,7 @@ img{max-width:100%}
 <a class="btn-line" href="#contact" style="display: inline-block; min-height: 48px; box-sizing: border-box; padding: 11px 32px; border: 1px solid #23211F; color: #23211F; text-decoration: none; font-weight: 700; font-size: 15px">ご注文・お問い合わせ</a>
 </div>
 </div>
-<div style="flex: 1 1 380px; min-width: 0; display: flex; justify-content: center">
+<div class="hero-img" style="flex: 1 1 380px; min-width: 0; display: flex; justify-content: center">
 <img src="images/fukaya.jpg" alt="デコタイル作品を胸に抱える深谷哲之" width="1000" height="1333" style="width: 100%; max-width: 480px; height: auto; display: block; box-shadow: 18px 18px 0 #B8322A">
 </div>
 </section>
